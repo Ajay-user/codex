@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CodeBot | Your coding AI</title>
+  </head>
+  <body>
+    <div id="app" class="app">
+      <!-- chat -->
+      <div id="chat-container" class="chat-container">
+        <!-- dummy chat  -->
+        <div class="chat-box bot">
+          <div class="chat-icon">
+            <img class="chat-icon-img" src="./assets/bot.svg" />
+          </div>
+          <div class="chat-content">
+            <span style="text-align: left">
+              Hello this is AI for code | Codex, A set of models that can
+              understand and generate code, including translating natural
+              language to code.<br />
+              Ask the AI for help regarding JavaScript, React, or any other
+              programming language. It can explain code, translate code to a
+              different language and much more. For example, if you ask it to
+              give you a sample flask code, it'll give you this output code.
+              <br />
+              <br />
+              <span style="font-size: 12px">
+                from flask import Flask<br />app = Flask(__name__)<br />
+                @app.route('/')<br />
+                def hello_world():<br />
+                return 'Hello World'<br />
+                if __name__ == '__main__':<br />
+                app.run()<br />
+              </span>
+              <br />
+              <span style="color: salmon"
+                >CAUTION : Requests are subjected to billing</span
+              ><br />
+              A rate limit error will occur when API requests are sent too
+              quickly. Requests are billed based on the number of tokens in the
+              inputs you provide and the answer that the model generates.
+              Internally, this endpoint makes calls to the Search and
+              Completions APIs, so its costs are a function of the costs of
+              those endpoints.<br />
+              This project is for demonstration purpose only, Kindly send no
+              more than 10# requests<br />
+            </span>
+          </div>
+        </div>
+
+        <!-- dummy chat  end-->
+      </div>
+      <!-- chat end -->
+
+      <!-- form start -->
+      <form class="form">
+        <textarea
+          class="form-textarea"
+          name="prompt"
+          id="textarea"
+          cols="1"
+          rows="1"
+          placeholder="Ask me coding queries.."
+        ></textarea>
+        <button class="btn btn-send">
+          <img src="./assets/send.svg" alt="send button" class="btn-img" />
+        </button>
+      </form>
+      <!-- form end -->
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

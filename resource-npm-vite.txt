@@ -1,0 +1,13 @@
+
+# create a vanilla JS repo
+npm create vite@latest client --template vanilla 
+
+# choose vanilla
+
+# then cd into 'vanilla'
+
+npm install
+
+--------------------------------------
+npm install cors => used for cross origin request --allow us to call server from frontend
+npm install dotenv => used for loading env var
