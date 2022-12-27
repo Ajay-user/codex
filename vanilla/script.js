@@ -88,7 +88,7 @@ const handleSubmit = async (e) => {
   chatContainer.scrollTop = chatContainer.scrollHeight;
 
   // Get response from backend
-  const response = await axios.post("http://localhost:5000", {
+  const response = await axios.post("https://codex-openai-cowk.onrender.com", {
     prompt: userMessage,
   });
   console.log(response);
