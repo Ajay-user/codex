@@ -53,7 +53,7 @@ const generateUniqueId = () => {
 const chatStrip = (isAI, msg, uniqueID) => `
 <div class="chat-box ${isAI ? "bot" : "user"}">
 <div class="chat-icon">
-  <img class="chat-icon-img" src="./assets/${isAI ? "bot" : "user"}.svg" />
+  <img class="chat-icon-img" src="${isAI ? bot : user}" />
 </div>
 <div class="chat-content" id='chat-content' ><p id=${uniqueID}>${msg}</p></div>
 </div>
@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
   const response = await axios.post("https://codex-openai-cowk.onrender.com", {
     prompt: userMessage,
   });
-  console.log(response);
+  // console.log(response);
 
   // clear the interval
   clearInterval(loadInterval);
